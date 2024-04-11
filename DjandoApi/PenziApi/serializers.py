@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from PenziApi.models import Users, messages
+from PenziApi.models import Users, Messages
 
 
-class UsersSerailizer(serializers.ModelSerializer):
+class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
         fields = "__all__"
@@ -10,5 +10,5 @@ class UsersSerailizer(serializers.ModelSerializer):
 
 class MessagesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = messages
+        model = Messages
         fields = "__all__"

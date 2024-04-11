@@ -17,7 +17,7 @@ class Users(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
-class messages(models.Model):
+class Messages(models.Model):
     message_id = models.AutoField(primary_key=True)
     sender = models.CharField(max_length=100)
     receipient = models.CharField(max_length=100)
