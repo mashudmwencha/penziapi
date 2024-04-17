@@ -21,5 +21,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url("admin/", admin.site.urls),
-    url(r"^PenziApi/", include("PenziApi.urls")),  # new
+    url(r"^", include("PenziApi.urls")),  # new
+    url(r"^", include("Penzi_sms.urls")),  # new
 ]
